@@ -1,0 +1,18 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://${POSTGRES_HOST:10.43.5.74}:${POSTGRES_PORT:5537}/${POSTGRES_DB:djuno}
+        username: ${POSTGRES_USERNAME:juno}
+        password: ${POSTGRES_PASSWORD:devjuno}
+    jpa:
+        properties:
+            hibernate:
+                format_sql: true
+        show-sql: true
+server:
+    port: 8085
+#ldap:
+#    active: ${LDAP_ACTIVE:false}
+#feign:
+#    httpclient:
+#        disable-ssl-validation: ${FEIGN_DISABLE_SSL:true}
+

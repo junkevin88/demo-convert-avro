@@ -1,0 +1,33 @@
+spring:
+    profiles:
+        default: local
+    main:
+        lazy-initialization: true
+    datasource:
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                format_sql: false
+        hibernate:
+            ddl-auto: none
+        show-sql: false
+server:
+    servlet:
+        contextPath: /secure
+#security:
+#    token:
+#        resourceId: ${RESOURCE_ID:res12oih123}
+#        signingKey: ${SIGN_KEY:4o8whef93408erjsdfnxcu3}
+#ldap:
+#    active: ${LDAP_ACTIVE:true}
+#    clientId: ${LDAP_CLIENT_ID:F56EF6B564D860C7E053C9042B0AF6D1}
+#    appId: ${LDAP_APP:JUNO}
+#    secretKey: ${LDAP_SECRET_KEY:AIaFd19j7Un04jS1M4RI583N}
+#eai:
+#    clientId: ${EAI_SSO_CLIENT_ID:f174a46e}
+#    clientSecret: ${EAI_SSO_CLIENT_SECRET:3206e7d54245fabd9b21802e47f93796}
+#    api:
+#        sso: ${EAI_SSO:https://sso-apigw-int.dti.co.id/auth/realms/3scale-dev/protocol/openid-connect}
+#        adGateway: ${EAI_AD_GATEWAY:https://api.devapps.ocp.dti.co.id/eai/ad-gateway/v2/api}
