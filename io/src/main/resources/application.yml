@@ -15,7 +15,7 @@ spring:
         show-sql: false
 server:
     servlet:
-        contextPath: /secure
+        contextPath: /
 #security:
 #    token:
 #        resourceId: ${RESOURCE_ID:res12oih123}
