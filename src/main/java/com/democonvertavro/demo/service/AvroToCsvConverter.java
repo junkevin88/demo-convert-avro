@@ -7,12 +7,14 @@ import org.apache.avro.file.FileReader;
 import org.apache.avro.generic.GenericDatumReader;
 import org.apache.avro.generic.GenericRecord;
 import org.apache.avro.io.DatumReader;
+import org.springframework.stereotype.Service;
 
 import java.io.*;
 
+@Service
 public class AvroToCsvConverter {
 
-    public static void main(String[] args) {
+    public void convertToCsv() {
         try {
             convertAvroToCsv("users.avro", "users.csv");
         } catch (IOException e) {

@@ -15,7 +15,9 @@ import org.apache.avro.file.DataFileReader;
 import org.apache.avro.generic.GenericData;
 import org.apache.avro.generic.GenericDatumReader;
 import org.apache.commons.io.FileUtils;
+import org.springframework.stereotype.Service;
 
+@Service
 public class AvroToJsonToCsvConverter {
 
     public static void readAvro(File file) {
@@ -64,7 +66,7 @@ public class AvroToJsonToCsvConverter {
 
     }
 
-    public static void main(String[] args) {
+    public void convertAvroToJsonToCsv() {
         File f = new File("users.avro");
         readAvro(f);
     }
