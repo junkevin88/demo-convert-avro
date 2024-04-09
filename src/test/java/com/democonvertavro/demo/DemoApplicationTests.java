@@ -1,10 +1,10 @@
-package com.demo.io;
+package com.democonvertavro.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class IoApplicationTests {
+class DemoApplicationTests {
 
 	@Test
 	void contextLoads() {
